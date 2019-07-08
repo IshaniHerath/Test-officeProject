@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/script.js"> </script>
+</head>
+
+<body>
+	<form>
+	<fieldset>
+		<div>
+			<h1> <u>Order Your Ice-cream</u> </h1>
+			
+			
+			<label for="id">Order Id:</label>
+			<input type="text" id="id" value="Please Enter Your order id    "> <br> <br> 
+			
+			<label for="cname">Customer Name :</label>
+			<input type="text" id="cname" value="Please Enter Your Name"> <br> <br> 
+			
+			<label for="name">Ice-Cream Name :</label> <select id="name" onchange="pickicecream()">
+				<option>Select Ice_Cream</option>
+				<option>Vanilla Icecream</option>
+				<option>Chocolate Icecream</option>
+				<option>Blueberry Icecream</option>
+				<option>CheeseCake with Waffle</option>
+			</select> <br> <br> 
+			
+			<label for="price">Price :</label> 
+			<input type="text" id="price" value="0"> <br> <br> 
+			
+			<label for="qty">Quantity :</label>
+			
+			<!-- Increment Button -->
+			<div class="value-button" id="increase">+</div>
+			<input type="number" id="qty" value="0" onclick="calTotal()" />
+			<div class="value-button" id="decrease">-</div>
+
+			<p> Total Amount : <input type="text" id="total" value="0"> </p>
+
+			<button type="submit" id="saveButton" value="Submit" onclick="updateClick()">Submit</button> <br> <br>
+			
+			Click Here To See <a th:href="@{orders/view}">Your Orders </a> <br> <br>
+			
+		</div>
+	</fieldset>
+	</form>
+</body>
+</html>

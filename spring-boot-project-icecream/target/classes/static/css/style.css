@@ -1,0 +1,31 @@
+body {
+	font-size: 20px;
+	background-color: linen;
+	text-align: center;
+}
+   
+
+fieldset{
+  border: 3px dashed coral;
+  width: 1000px;
+  margin: 0 auto;
+  position: center;
+}
+
+table{
+  width: 1000px;
+  margin: 0 auto;
+  position: center;
+}
+
+h1 {
+	color: #0000FF;
+}
+
+h2 {
+	color: #FF0000;
+}
+
+footer {
+	margin-top: 60px;
+}

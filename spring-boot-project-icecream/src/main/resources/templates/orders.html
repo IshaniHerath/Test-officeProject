@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	
+	<script type="text/javascript" th:src="@{/js/call.js}"></script>
+	<link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
+	
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		
+	<script>
+		$(document).ready(function () {
+			productList();
+			});
+	</script>
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="starter-template">
+			<fieldset>
+				<h1>
+					<u>Your Orders</u>
+				</h1>
+
+				<table id = "productTable" border="1">
+                    <th>Order Number</th>
+                    <th>Order Customer Name</th>
+                    <th>Order Item Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+					
+						<button onclick="productList()"> View My Orders </button>  <Br> <br>
+					
+				</table>
+				<br>
+				<br>
+			</fieldset>
+		</div>
+	</div>
+</body>
+</html>
